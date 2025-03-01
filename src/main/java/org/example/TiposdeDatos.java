@@ -221,7 +221,7 @@ public class TiposdeDatos {
             System.out.println("NOT (!valor2): " + resultadoNot2);
             scanner.close();
         }
-    public void ejecutar() {
+        public void ejecutar() {
     }
 }
 
