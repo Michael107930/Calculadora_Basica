@@ -6,11 +6,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 public class Main {
-    public static void main(String[] args) {
+    public static void Main (String[] args) {
+
+        TiposdeDatos tiposDeDatos = new TiposdeDatos();
+        tiposDeDatos.ejecutar();
+
         System.out.println("BIENVENIDO A TU CALCULADORA");
         System.out.println("Digita tu nombre: ");
         Scanner scanner = new Scanner(System.in);
-        String name = scanner.nextLine();
+        java.lang.String name = scanner.nextLine();
         int salir = 1;
         while (salir >= 1) {
             Menu.mostrarMenu();
@@ -72,7 +76,7 @@ public class Main {
                     break;
                 case 7: //Aqui va modulo
                     break;
-                case 8: //Este es para salir, ne avisa cuando termine su parte para yo hacer esta parte.
+                case 9: //Este es para salir, ne avisa cuando termine su parte para yo hacer esta parte.
             }
             System.out.println("Si deseas continuar marca 1, en caso contrario marca 0: ");
             int eleccion = scanner.nextInt();
