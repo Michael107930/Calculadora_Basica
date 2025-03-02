@@ -1,15 +1,10 @@
 package org.example;
-import javax.sound.midi.Soundbank;
-import javax.xml.transform.Source;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 public class Main {
     public static void main (String[] args) {
 
-        TiposdeDatos tiposDeDatos = new TiposdeDatos();
-        tiposDeDatos.ejecutar();
 
         System.out.println("BIENVENIDO A TU CALCULADORA");
         System.out.println("Digita tu nombre: ");
