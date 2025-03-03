@@ -3,7 +3,8 @@ package org.example;
 import java.util.Scanner;
 
 public class TiposdeDatos {
-        public static void main(String[] args) {
+
+        public static void Main(String[] args) {
             Scanner scanner = new Scanner(System.in);
 
             System.out.println("____[Ejemplos de tipos de Datos]____");
@@ -11,63 +12,54 @@ public class TiposdeDatos {
             System.out.println("[Datos Primitivos].");
             System.out.println("Los datos primitivos son los tipos de datos basicos que proporciona un lenguaje de programacion.");
             System.out.println("Son la unidad de procesamiento mas pequeña que puede utilizar un programador.");
-
             System.out.println();
             //Tipo de dato (int)
             System.out.println("*--Int(entero)--.");
             System.out.println("Un numero entero es un numero que puede ser positivo, negativo o cero, pero sin parte decimal.");
             System.out.print(" Porfavor ingrese un numero entero(int): ");
             int numeroEntero = scanner.nextInt();
-            System.out.println("Número entero: " + numeroEntero);
             System.out.println();
             //Tipo de dato (double)
             System.out.println("*--Double(decimal)--.");
             System.out.println("Un numero decimal es un numero que tiene una parte entera y una parte decimal. Se utilizan para representar numeros que son más pequeños que la unidad. ");
             System.out.print("Ingrese un numero decimal(double): ");
             double numeroDecimal = scanner.nextDouble();
-            System.out.println("Número double: " + numeroDecimal);
             System.out.println();
             //Tipo de dato (float)
             System.out.println("*--Float(numeros con decimales)--");
             System.out.println("El tipo de dato float es un tipo de datos numerico que almacena numeros con decimales, es decir, numeros reales. Se utiliza para representar valores que pueden ser positivos o negativos");
             System.out.print("Ingrese un numero decimal (float): ");
             float numeroFloat = scanner.nextFloat();
-            System.out.println("Número float: " + numeroFloat);
             System.out.println();
             //Tipo de dato (char)
             System.out.println("*--Char (caracter)--");
             System.out.println("El tipo de dato char  es un tipo de dato que se utiliza para almacenar un caracter, como una letra, un digito, un signo de puntuacion o un espacio. ");
             System.out.print("Ingrese un caracter(char)(Una letra): ");
             char charcaracter = scanner.next().charAt(0);
-            System.out.println("Carácter ingresado: " + charcaracter);
             System.out.println();
             //Tipo de dato (booleano)
             System.out.println("*--Boolean (verdadero|true| y falso|false|--");
             System.out.println("El tipo de dato booleano es un tipo de dato que representa valores de verdad, como verdadero (true) o falso (false)");
             System.out.print("Ingrese un valor booleano (true/false): ");
             boolean caaracterBooleano = scanner.nextBoolean();
-            System.out.println("Valor booleano: " + caaracterBooleano);
             System.out.println();
             //Tipo de dato (Short)
             System.out.println("*--Short (numero corto)--");
             System.out.println("El tipo de dato short es un tipo de dato primitivo que representa un entero de 16 bits con signo. Se utiliza para ahorrar memoria en grandes matrices.");
             System.out.print("Ingrese un numero corto (short): ");
             short numeroShort = scanner.nextShort();
-            System.out.println("Número short: " + numeroShort);
             System.out.println();
             //Tipo de dato (long)
             System.out.println("*--Long (numero largo)--");
             System.out.println("El tipo de dato long en Java es un entero de 64 bits que se usa para almacenar numeros con signo. Se utiliza cuando se necesita un rango de valores mas amplio que el que proporciona el tipo de dato int");
             System.out.print("Ingrese un numero largo (long): ");
             long numeroLong = scanner.nextLong();
-            System.out.println("Número long: " + numeroLong);
             System.out.println();
             //Tipo de dato (byte)
             System.out.println("*--Byte--");
             System.out.println("En Java, el tipo de dato byte es un entero de 8 bits con signo que puede almacenar valores entre -128 y 127.");
             System.out.print("Ingrese un numero byte (byte): ");
             byte numeroByte = scanner.nextByte();
-            System.out.println("Número byte: " + numeroByte);
             System.out.println();
             System.out.println("[Operadores]");
             System.out.println("Los operadores en programacion son simbolos o palabras reservadas que indican las operaciones que se deben realizar en una expresion.");
@@ -88,7 +80,7 @@ public class TiposdeDatos {
             double num3 = scanner.nextDouble();
             System.out.print(" Por favor ingrese el segundo numero: ");
             double num4 = scanner.nextDouble();
-            double resta = num3 - num4;
+            double resta = num3 + num4;
             System.out.println("La resta de " + num3 + " - " + num4 + " es: " + resta);
             //Operador multiplicacion
             System.out.println("|MULTIPLICACION|");
@@ -136,12 +128,6 @@ public class TiposdeDatos {
             boolean esMayorIgual = num11 >= num12;
             //Operador mayor=
             boolean esMenorIgual = num11 <= num12;
-            System.out.println(num11 + " > " + num12 + " = " + esMayor);
-            System.out.println(num11 + " < " + num12 + " = " + esMenor);
-            System.out.println(num11 + " == " + num12 + " = " + esIgual);
-            System.out.println(num11 + " != " + num12 + " = " + esDiferente);
-            System.out.println(num11 + " >= " + num12 + " = " + esMayorIgual);
-            System.out.println(num11 + " <= " + num12 + " = " + esMenorIgual);
             System.out.println();
             System.out.println("[*--Operadores Logicos --");
             System.out.print("Ingrese el primer valor booleano (true o false): ");
@@ -155,10 +141,6 @@ public class TiposdeDatos {
             //Operador not
             boolean resultadoNot1 = !valor1;
             boolean resultadoNot2 = !valor2;
-            System.out.println("AND (&&): " + resultadoAnd);
-            System.out.println("OR  (||): " + resultadoOr);
-            System.out.println("NOT (!valor1): " + resultadoNot1);
-            System.out.println("NOT (!valor2): " + resultadoNot2);
             System.out.println();
             System.out.println("[Estructuras de Control]");
             System.out.println("[Las estructuras de control son instrucciones que controlan el orden de ejecucion de las acciones de un programa");
@@ -214,10 +196,32 @@ public class TiposdeDatos {
             do {
                 System.out.print("Ingrese un número mayor 60 para salir del bucle: ");
                 numeroWhile = scanner.nextInt();
-            } while (numeroWhile <= 60);
+            } while (numeroWhile <= 10);
             System.out.println("¡Correcto! FIN  " + numeroWhile);
             System.out.println();
+            System.out.println("Número entero: " + numeroEntero);
+            System.out.println("Número float: " + numeroFloat);
+            System.out.println("Número double: " + numeroDecimal);
+            System.out.println("Carácter ingresado: " + charcaracter);
+            System.out.println("Valor booleano: " + caaracterBooleano);
+            System.out.println("Número short: " + numeroShort);
+            System.out.println("Número long: " + numeroLong);
+            System.out.println("Número byte: " + numeroByte);
+            System.out.println();
+            System.out.println(num11 + " > " + num12 + " = " + esMayor);
+            System.out.println(num11 + " < " + num12 + " = " + esMenor);
+            System.out.println(num11 + " == " + num12 + " = " + esIgual);
+            System.out.println(num11 + " != " + num12 + " = " + esDiferente);
+            System.out.println(num11 + " >= " + num12 + " = " + esMayorIgual);
+            System.out.println(num11 + " <= " + num12 + " = " + esMenorIgual);
+            System.out.println();
+            System.out.println("AND (&&): " + resultadoAnd);
+            System.out.println("OR  (||): " + resultadoOr);
+            System.out.println("NOT (!valor1): " + resultadoNot1);
+            System.out.println("NOT (!valor2): " + resultadoNot2);
             scanner.close();
         }
+        public void ejecutar() {
+    }
 }
 

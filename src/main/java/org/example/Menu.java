@@ -10,6 +10,7 @@ public class Menu {
         System.out.println("5. Potencia");
         System.out.println("6. Raíz cuadrada (solo primer número)");
         System.out.println("7. Módulo");
-        System.out.println("8. Salir");
+        System.out.println("8. Convertidor entre Fahrenheit-Celsius");
+        System.out.println("9. Salir de la calculadora.");
     }
 }

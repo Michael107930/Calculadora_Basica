@@ -30,6 +30,24 @@ public class Operaciones {
         } else {
             return num1 /num2;
         }
-
+    }
+    public static double potenciar (double num1, double num2){
+        return Math.pow(num1,num2);
+    }
+    public static double raices (double num){
+        return Math.pow(num,0.5);
+    }
+    public static double modulo(double num1, double num2){
+        if (num2 == 0 ){
+            throw new ArithmeticException("No se puede dividir por cero.");
+        } else {
+            return num1%num2;
+        }
+    }
+    public static double celcius (double num1){
+        return ((num1-32)*5/9);
+    }
+    public static double fahrenheit(double num1){
+        return ((num1*9/5)+32);
     }
 }
