@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class TiposdeDatos {
 
-        public static void Main(String[] args) {
+        public  void ejecutar(){
             Scanner scanner = new Scanner(System.in);
 
             System.out.println("____[Ejemplos de tipos de Datos]____");
@@ -221,7 +221,6 @@ public class TiposdeDatos {
             System.out.println("NOT (!valor2): " + resultadoNot2);
             scanner.close();
         }
-        public void ejecutar() {
     }
-}
+
 

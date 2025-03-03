@@ -8,8 +8,7 @@ import java.util.Scanner;
 public class Main {
     public static void main (String[] args) {
 
-        TiposdeDatos tiposDeDatos = new TiposdeDatos();
-        tiposDeDatos.ejecutar();
+
 
         System.out.println("BIENVENIDO A TU CALCULADORA");
         System.out.println("Digita tu nombre: ");
@@ -70,13 +69,46 @@ public class Main {
                     double rest_division = Operaciones.dividir(num1, num2);
                     System.out.println("El resultado de la divisíon es: " + rest_division);
                     break;
-                case 5://Aqui va potencia diego
+                case 5:
+                    System.out.println("Ingresa el número base: ");
+                    double base = scanner.nextDouble();
+                    System.out.println("Ingresa la potencia: ");
+                    double potencia  = scanner.nextDouble();
+                    double resultado_potencia = Operaciones.potenciar(base,potencia);
+                    System.out.printf("El resultado de %.2f a la %.2f es : %.2f %n",base,potencia,resultado_potencia);
                     break;
-                case 6://Aqui va raiz cuadrada
+                case 6:
+                    System.out.println("Ingresa el número: ");
+                    double root = scanner.nextDouble();
+                    if (root <0){
+                        root = -(root);
+                    }
+                    double result_root = Operaciones.raices(root);
+                    System.out.printf("El resultado de la raiz cuadrada de %.2f es: %.2f %n",root,result_root);
                     break;
-                case 7: //Aqui va modulo
+                case 7:
+                    System.out.println("Ingresa el primer número: ");
+                    double numero1_module = scanner.nextDouble();
+                    System.out.println("Ingresa el segundo número: ");
+                    double numero2_module = scanner.nextDouble();
+                    double result_module = Operaciones.modulo(numero1_module,numero2_module);
+                    System.out.printf("El modulo de %.2f entre %.2f es: %.2f %n",numero1_module,numero2_module,result_module);
                     break;
-                case 9: //Este es para salir, ne avisa cuando termine su parte para yo hacer esta parte.
+                case 8:
+                    System.out.println("1.Fahrenheit-Celsius\n2.Celsius-Fahrenheit\nSelecciona una opción: ");
+                    double seleccion = scanner.nextDouble();
+                    if (seleccion == 1){
+                        System.out.println("Escribe los grados Fahrenheit: ");
+                        double valor = scanner.nextDouble();
+                        double result = Operaciones.celcius(valor);
+                        System.out.printf("El resultado son: %.2f Celsius %n",result);
+                    } else if (seleccion == 2){
+                        System.out.println("Escribe los grados Celsius: ");
+                        double valor = scanner.nextDouble();
+                        double result = Operaciones.fahrenheit(valor);
+                        System.out.printf("El resultado son: %.2f Fahrenheit %n",result);
+                    }
+
             }
             System.out.println("Si deseas continuar marca 1, en caso contrario marca 0: ");
             int eleccion = scanner.nextInt();
@@ -87,5 +119,14 @@ public class Main {
             }
 
         }
+        System.out.println("Deseas ver los tipos de datos S/N: ");
+        scanner = new Scanner(System.in);
+        String sele = scanner.nextLine();
+        if (sele.equalsIgnoreCase("S")||sele.equalsIgnoreCase("SI")) {
+            TiposdeDatos tiposDeDatos = new TiposdeDatos();
+            tiposDeDatos.ejecutar();
+
+        }
+        System.out.println("Hasta Pronto.");
     }
 }
